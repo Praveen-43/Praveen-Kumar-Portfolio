@@ -1,0 +1,303 @@
+
+body {
+  overflow-x: hidden;
+}
+
+.trispace {
+  font-family: "Trispace", sans-serif;
+}
+
+.fingerpaint {
+  font-family: "Finger Paint", cursive;
+  letter-spacing: 5px;
+}
+.trigger {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+/* font color */
+
+.bgColor-dark {
+  background-color: #22222b;
+}
+
+.textColor-dark {
+  color: #a2a1a6;
+}
+.navbar {
+  box-shadow: 0 3px 6px rgba(var(--bs-secondary-rgb), 0.2);
+}
+
+nav li {
+  cursor: pointer;
+}
+.quote {
+  letter-spacing: normal;
+}
+
+.typewriter {
+  color: #6e85b7;
+}
+
+.line {
+  width: 2500px;
+}
+
+.icons :hover {
+  cursor: pointer;
+}
+.github :hover {
+  color: #6e5494;
+}
+
+.linkedin :hover {
+  color: #0a66c2;
+}
+
+.gmail :hover {
+  color: #c71610;
+}
+#home {
+  height: 800px;
+  margin-top: 130px;
+}
+
+#about {
+  /* height: 1300px; */
+  height: fit-content;
+}
+
+#skills {
+  height: 800px;
+}
+
+#project {
+  height: 800px;
+}
+
+#contact {
+  height: 200px;
+}
+
+/* about-page */
+
+.about-head {
+  letter-spacing: 1px;
+}
+.about-title {
+  color: #1e46c2;
+}
+
+.context {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.list {
+  list-style: none;
+  margin-left: 70px;
+  line-height: 70px;
+  font-size: larger;
+}
+
+/* skill page */
+
+.section-title {
+  margin: -5px 0 15px 0;
+  font-size: 2.5rem;
+  overflow: hidden;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.skill {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.skill-cintainer {
+  display: flex;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(53, 49, 49);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile {
+  padding: 0px;
+  
+}
+.control{
+  overflow: hidden !important;
+}
+
+/* project */
+
+.project-dark {
+  background-color: #22222b;
+  color: #c71610;
+}
+
+/* contact */
+.contact-pill {
+  width: 20rem;
+  color: white;
+  font-weight: 500;
+}
+.contact {
+  cursor: pointer;
+}
+.inside {
+  background-color: whitesmoke;
+}
+.hint {
+  font-size: 20px !important;
+}
+.hint-icon {
+  font-size: 70px;
+}
+
+@media (max-width: 991px) {
+  #home {
+    margin-top: 140px;
+    text-align: center;
+    height: 550px;
+  }
+  .intro {
+    font-size: large;
+    letter-spacing: normal;
+  }
+
+  .typewriter {
+    letter-spacing: normal;
+  }
+  .profile2 {
+    display: inline;
+  }
+
+  /* about-page */
+  .about-head {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .about-title {
+    font-size: 15px;
+    letter-spacing: normal;
+  }
+
+  .context {
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1em;
+    word-spacing: 2px;
+    text-align: justify;
+  }
+  .list {
+    font-size: small;
+    line-height: 30px;
+    margin-left: 35px;
+  }
+
+  /* skill page */
+  /* skill page */
+
+  /* contact */
+  .contact-pill {
+    width: 15rem;
+
+    font-weight: 500;
+  }
+  .hint {
+    font-size: 15px !important;
+  }
+  .hint-icon {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1230px) {
+  .skill-icon {
+    margin-top: 30px !important;
+    row-gap: 30px;
+    letter-spacing: -2px;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 991px) {
+  .skill {
+    /* justify-content: center; */
+    justify-content: flex-start;
+    padding: 0 !important;
+    padding-top: 1em !important;
+  }
+}
+@media (max-width: 576px) {
+  /* new */
+  .skill {
+    display: flex !important;
+    /* grid-template-columns: auto auto; */
+    padding: 0 !important;
+    padding-top: 1em !important;
+  }
+  .skill-cintainer {
+    display: flex;
+    max-width: max-content !important;
+    width: 5rem;
+    font-size: small !important;
+    margin: 0.5rem;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(53, 49, 49);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .section-title {
+    width: max-content !important;
+  }
+  .pad {
+    padding: 0px !important;
+  }
+}
+
+/* animation */
+.bounce-in {
+  animation: bounce-in 2s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bounce-in:hover {
+  animation: none;
+}
